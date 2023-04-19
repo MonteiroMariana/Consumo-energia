@@ -18,7 +18,7 @@ export class CalcComponent {
   enviar()
   {
     let total = 0;
-    total += this.pessoas * 30 * 5000 * 0.25 / 1000; //dias do mês, potência, hrs por dia
+    total += this.pessoas * 30 * 5000 * 0.167 / 1000; //dias do mês, potência, hrs por dia
     total += this.comodos * 30 * 15 * 12 / 1000;
     total += this.tvs * 30 * 200 * 6 / 1000;
     total += this.pcs * 30 * 350 * 6 / 1000;
