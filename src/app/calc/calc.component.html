@@ -1,0 +1,36 @@
+<div class="form-floating mb-4">
+    <input type="number" class="form-control" id="floatingInput" placeholder="00.00" [(ngModel)]="pessoas">
+    <label for="floatingInput">N de pessoas</label>
+</div>
+<div class="form-floating mb-4">
+    <input type="number" class="form-control" id="floatingInput" placeholder="00.00" [(ngModel)]="comodos">
+    <label for="floatingInput">N de cômodos</label>
+</div>
+<div class="form-floating mb-4">
+    <input type="number" class="form-control" id="floatingInput" placeholder="00.00" [(ngModel)]="tvs">
+    <label for="floatingInput">N Tvs</label>
+</div>
+<div class="form-floating mb-4">
+    <input type="number" class="form-control" id="floatingInput" placeholder="00.00" [(ngModel)]="pcs">
+    <label for="floatingInput">N computadores</label>
+</div>
+<div class="form-floating mb-4">
+    <input type="number" class="form-control" id="floatingInput" placeholder="00.00" [(ngModel)]="tarifa">
+    <label for="floatingInput">Tarifa energéticas</label>
+</div>
+<div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" [(ngModel)]="lava">
+    <label class="form-check-label" for="flexCheckDefault">
+        Máquina de lavar roupas
+    </label>
+</div>
+<div class="form-check mb-3">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" [(ngModel)]="seca">
+    <label class="form-check-label" for="flexCheckDefault">
+        Máquina de secar roupas
+    </label>
+</div>
+<button type="button" class="btn btn-primary" (click)="enviar()">Calcular</button>
+<div class="alert alert-primary" role="alert">
+    {{resultado}}
+</div>
